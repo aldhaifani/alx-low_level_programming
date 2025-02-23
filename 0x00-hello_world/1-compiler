@@ -1,0 +1,4 @@
+#!/bin/bash
+IFS='.'
+read -ra filename <<< "$CFILE"
+gcc -c ${filename[0]}.c -o ${filename[0]}.o
