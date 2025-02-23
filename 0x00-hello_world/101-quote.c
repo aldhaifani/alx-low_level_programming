@@ -11,5 +11,5 @@ int main(void)
 
 	write(1, s, 59);
 
-	return (0);
+	return (1);
 }
