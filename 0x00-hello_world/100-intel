@@ -1,0 +1,2 @@
+#!/bin/bash
+IFS='.'; read -ra filename <<< "$CFILE"; gcc -S -masm=intel ${filename[0]}.c -o ${filename[0]}.s
