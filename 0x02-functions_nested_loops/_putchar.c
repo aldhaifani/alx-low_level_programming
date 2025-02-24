@@ -2,6 +2,7 @@
 
 /**
  * _putchar - Function that writes a char to stdout
+ * @c: The character to print
  *
  * Return: on success the written character,
  *		 on failure, negative number
