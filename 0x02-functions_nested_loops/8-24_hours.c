@@ -8,18 +8,34 @@
  */
 void jack_bauer(void)
 {
-	int h0, h1, m0, m1;
+	int h, m;
 
-	for (h0 = 0; h0 <= 2; h0++)
-		for (h1 = 0; h1 <= 3; h1++)
-			for (m0 = 0; m0 <= 5; m0++)
-				for (m1 = 0; m1 <= 9; m1++)
-				{
-					_putchar(h0 + '0');
-					_putchar(h1 + '0');
-					_putchar(':');
-					_putchar(m0 + '0');
-					_putchar(m1 + '0');
-					_putchar('\n');
-				}
+	for (h = 0; h < 24; h++)
+	{
+		for (m = 0; m < 60; m++)
+		{
+			if (h < 10)
+			{
+				_putchar('0');
+				_putchar(h + '0');
+			}
+			else 
+			{
+				_putchar((h / 10) + '0');
+				_putchar((h % 10) + '0');
+				_putchar(':');
+			}
+			if (m < 10)
+			{
+				_putchar('0');
+				_putchar(m + '0');
+			}
+			else
+			{
+				_putchar((m / 10) + '0');
+				_putchar((m % 10) + '0');
+			}
+			_putchar('\n');
+		}
+	}
 }
