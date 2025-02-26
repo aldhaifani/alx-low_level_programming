@@ -1,4 +1,4 @@
-#include "main.h"
+#include <stdio.h>
 
 /**
  * jack_bauer - function that prints every minute of the day of Jack Bauer,
@@ -10,32 +10,16 @@ void jack_bauer(void)
 {
 	int h, m;
 
-	for (h = 0; h < 24; h++)
+	for (h = 0; h <= 23; h++)
 	{
-		for (m = 0; m < 60; m++)
+		for (m = 0; m <= 59; m++)
 		{
 			if (h < 10)
-			{
-				_putchar('0');
-				_putchar(h + '0');
-			}
-			else 
-			{
-				_putchar((h / 10) + '0');
-				_putchar((h % 10) + '0');
-				_putchar(':');
-			}
+				printf("0");
+			printf("%d:", h);
 			if (m < 10)
-			{
-				_putchar('0');
-				_putchar(m + '0');
-			}
-			else
-			{
-				_putchar((m / 10) + '0');
-				_putchar((m % 10) + '0');
-			}
-			_putchar('\n');
+				printf("0");
+			printf("%d\n", m);
 		}
 	}
 }
