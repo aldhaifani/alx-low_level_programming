@@ -27,14 +27,14 @@ void print_times_table(int n)
 			{
 				_putchar('\n');
 			}
-			else if (result < 10)
+			else if (i * (j + 1) < 10)
 			{
 				_putchar(',');
 				_putchar(' ');
 				_putchar(' ');
 				_putchar(' ');
 			}
-			else if (result < 100)
+			else if (i * (j + 1) < 100)
 			{
 				_putchar(',');
 				_putchar(' ');
