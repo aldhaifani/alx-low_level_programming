@@ -20,8 +20,12 @@ int main(void)
 
 	/* add multiples of 5 */
 	for (i = 1; i * 5 < 1024; i++)
+	{
+		if (i * 5 % 3 == 0)
+			continue;
 		result += i * 5;
-	
+	}
+
 	printf("%lu\n", result);
 
 	return (0);
