@@ -21,7 +21,7 @@ int main(void)
 	maxPrimeFactor = 3;
 	while (n % 3 == 0)
 		n /= 3;
-	
+
 	/**
 	 * Now we have to only check for other factors
 	 * other than 2 and 3
