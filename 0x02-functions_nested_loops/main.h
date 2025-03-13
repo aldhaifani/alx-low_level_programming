@@ -15,5 +15,6 @@ int add(int, int);
 void print_to_98(int n);
 void print_times_table(int n);
 void num_print_putchar(long int);
+void print_uint128(__uint128_t);
 
 #endif
