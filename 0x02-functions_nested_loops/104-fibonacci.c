@@ -26,7 +26,7 @@ int main(void)
 	for (i = 0; i < 96; i++)
 	{
 		x = a + b;
-		if (i < 97)
+		if (i < 95)
 		{
 			print_uint128(x);
 			printf(", ");
@@ -62,7 +62,7 @@ void print_uint128(__uint128_t num)
 
 	buffer[index] = '\0';
 
-	while (num > 0) 
+	while (num > 0)
 	{
 		buffer[--index] = '0' + (num % 10);
 		num /= 10;
